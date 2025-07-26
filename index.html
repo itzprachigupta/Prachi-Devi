@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Prachi Devi | Data Analyst & BI Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Prachi Devi - Data Analyst & BI Developer specializing in Power BI, SQL, and telecom analytics with 1.5+ years of experience." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="lavender-theme-style.css">
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container flex justify-between items-center py-16">
+      <a href="#hero" class="logo flex items-center gap-8">
+        <span class="logo__circle">PD</span>
+        <span class="logo__text">Prachi Devi</span>
+      </a>
+      <nav class="nav" id="navbar">
+        <ul class="nav__list flex gap-16">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#certifications">Certifications</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions flex items-center gap-8">
+        <button id="themeToggle" class="btn Toggle btn--sm" aria-label="Toggle Dark/Light Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <!-- <button id="mobileMenuToggle" class="btn Toggle btn--sm mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+          <i class="fas fa-bars"></i>
+        </button> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero flex items-center">
+    <div class="hero__particles" aria-hidden="true"></div>
+    <div class="container hero__inner flex flex-col items-center justify-center text-center gap-16">
+      <div class="avatar" aria-hidden="true">
+        <!-- <div class="avatar__image"></div> -->
+        <img src="./Prachi .jpg" alt="Prachi Gupta" class="avatar-img">
+      </div>
+      <h1 class="hero__title">Prachi Devi</h1>
+      <h2 class="hero__subtitle typing" id="typingText">Data Analyst & BI Developer</h2>
+      <p class="hero__tagline">Transforming Telecom Data into Strategic Insights</p>
+      <!-- <div class="flex gap-16 hero__cta">
+        <a href="#projects" class="btn btn--primary btn--lg">View My Work</a>
+        <a href="#contact" class="btn btn--primary btn--lg">Download Resume</a>
+        <a class="btn btn--primary" href="Prachi_Devi_Resume.pdf" download>Download Resume</a>
+      </div> -->
+      <button id="downloadResume" class="btn btn--outline btn--full-width mt-8">
+          <!-- <i class="fas fa-download"></i> Download Resume -->
+          <!-- <a href="#projects" class="btn btn--primary btn--lg">View My Work</a> -->
+          <a class="btn btn--primary btn--lg" href="Prachi_Devi_Resume.pdf" download>Download Resume</a>
+          <a href="#contact" class="btn btn--primary btn--lg">Connect with Me</a>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS COUNTERS ================= -->
+  <section class="counters" id="achievements">
+    <div class="container">
+      <div class="grid-counter" id="counterGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about py-16">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about__content">
+        <div class="about__text">
+          <p class="about__bio" id="aboutText"></p>
+        </div>
+        <div class="about__highlights">
+          <div class="highlight-card">
+            <i class="fas fa-chart-line"></i>
+            <h4>Data-Driven Impact</h4>
+            <p>1.5+ years analyzing telecom data with advanced Excel, SQL, Python, and Power BI to uncover patterns, optimize resolution loops, and drive performance KPIs.</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-cog"></i>
+            <h4>Process Optimization</h4>
+            <p>Idetified gaps and achieved 40% reduction in manual processes through automation and dashboards</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-users"></i>
+            <h4>BI Tool Expertise</h4>
+            <p>Built 5+ dynamic Power BI dashboards integrating SQL, DAX, and Excel to enable real-time visibility for CXOs and Circle Heads.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="skills py-16">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div id="skillsGrid" class="skills__grid"></div>
+      <h3 class="section-title">Soft Skills</h3>
+      <ul id="softSkillList" class="soft-skills flex flex-wrap gap-8"></ul>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <!-- <section id="projects" class="projects py-16">
+    <div class="container">
+      <div class="justify-between items-center mb-8">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-filters flex gap-8" id="projectFilters"></div>
+      </div>
+      <div id="projectGrid" class="project__grid">
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="experience py-16">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications" class="certifications py-16">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div id="certificationsGrid" class="cert__grid"></div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact py-16">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact__wrapper">
+        <div class="contact__form-container">
+          <form id="contactForm" class="contact__form">
+            <div class="form-group">
+              <label class="form-label" for="name">Your Name</label>
+              <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input class="form-control" type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full-width">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+        <div class="contact__info">
+          <div class="contact__card">
+            <h4>Let's Connect</h4>
+            <p>I'm always interested in new opportunities and collaborations in data analytics.</p>
+            <ul class="contact__list">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:prachigupta58000@gmail.com">prachigupta58000@gmail.com</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Gurgaon, India</span>
+              </li>
+              <li>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/itzprachigupta/" target="_blank">LinkedIn Profile</a>
+              </li>
+              <li>
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/itzprachigupta" target="_blank">GitHub Profile</a>
+              </li>
+            </ul>
+            <button id="downloadResume" class="btn btn--outline btn--full-width mt-8">
+              <!-- <i class="fas fa-download"></i> Download Resume -->
+              <a class="btn btn--primary" href="Prachi_Devi_Resume.pdf" download>Download Resume</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer py-16">
+    <div class="container">
+      <div class="footer__content flex flex-col items-center gap-16 text-center">
+        <div class="footer__brand">
+          <div class="logo flex items-center gap-8">
+            <span class="logo__circle">PD</span>
+            <span class="logo__text">Prachi Devi</span>
+          </div>
+          <p class="mt-8">Data Analyst & BI Developer</p>
+        </div>
+        <div class="socials flex gap-16">
+          <a href="https://www.linkedin.com/in/itzprachigupta/" target="_blank" aria-label="LinkedIn" class="social-link">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+          <a href="https://github.com/itzprachigupta" target="_blank" aria-label="GitHub" class="social-link">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:prachigupta58000@gmail.com" aria-label="Email" class="social-link">
+            <i class="fas fa-envelope fa-lg"></i>
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; <span id="year"></span> Prachi Devi. All rights reserved.</p>
+          <p class="footer__attribution">Built with passion for data and design</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= PROJECT MODAL ================= -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content" role="document">
+      <button class="modal__close" id="modalClose" aria-label="Close Modal">
+        <i class="fas fa-times" ></i>
+      </button>
+      <div class="modal__header">
+        <h3 id="modalTitle"></h3>
+        <div id="modalTechStack" class="modal__tech-stack"></div>
+      </div>
+      <div class="modal__body">
+        <p id="modalDescription"></p>
+        <div class="modal__section">
+          <h4>Key Metrics</h4>
+          <ul id="modalMetrics" class="modal__metrics"></ul>
+        </div>
+        <div class="modal__section">
+          <p id="modalImpact"></p>
+        </div>
+        <div class="modal__section">
+          <p id="modalStakeholders"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LOADING SCREEN ================= -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-spinner"></div>
+    <p>Loading Portfolio...</p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
