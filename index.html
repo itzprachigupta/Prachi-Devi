@@ -19,7 +19,6 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="lavender-theme-style.css">
 </head>
 <body>
   <!-- ================= HEADER ================= -->
@@ -155,7 +154,7 @@
       <h2 class="section-title">Get In Touch</h2>
       <div class="contact__wrapper">
         <div class="contact__form-container">
-          <form id="contactForm" class="contact__form">
+          <form id="contactForm" class="contact__form" action="https://formspree.io/f/mdkdgyyv" method="POST">
             <div class="form-group">
               <label class="form-label" for="name">Your Name</label>
               <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name" required />
@@ -172,9 +171,10 @@
               <label class="form-label" for="message">Message</label>
               <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
             </div>
-            <button type="submit" class="btn btn--primary btn--full-width">
+            <button type="submit" class="btn btn--primary btn--full-width" onclick="sendMail()">
               <i class="fas fa-paper-plane"></i> Send Message
             </button>
+            <input type="text" name="_gotcha" style="display:none">
           </form>
         </div>
         <div class="contact__info">
