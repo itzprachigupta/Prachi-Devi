@@ -960,43 +960,68 @@ function populateProjects() {
   // ================= CONTACT FORM ================= 
   const contactForm = document.getElementById('contactForm');
   
+  // if (contactForm) {
+  //   contactForm.addEventListener('submit', (e) => {
+  //     e.preventDefault();
+      
+  //     const name = document.getElementById('name')?.value;
+  //     const email = document.getElementById('email')?.value;
+  //     const subject = document.getElementById('subject')?.value;
+  //     const message = document.getElementById('message')?.value;
+
+  //     // Simple validation
+  //     if (!name || !email || !message) {
+  //       alert('Please fill in all required fields.');
+  //       return;
+  //     }
+
+  //     // Email validation
+  //     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  //     if (!emailRegex.test(email)) {
+  //       alert('Please enter a valid email address.');
+  //       return;
+  //     }
+
+  //     // Simulate form submission
+  //     const submitButton = contactForm.querySelector('button[type="submit"]');
+  //     const originalText = submitButton.innerHTML;
+      
+  //     submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+  //     submitButton.disabled = true;
+
+  //     setTimeout(() => {
+  //       alert(`Thank you ${name}! Your message has been sent. I'll get back to you soon.`);
+  //       contactForm.reset();
+  //       submitButton.innerHTML = originalText;
+  //       submitButton.disabled = false;
+  //     }, 2000);
+  //   });
+  // }
+
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', (e) => {
+    const name = document.getElementById('name')?.value;
+    const email = document.getElementById('email')?.value;
+    const message = document.getElementById('message')?.value;
+
+    if (!name || !email || !message) {
+      alert('Please fill in all required fields.');
       e.preventDefault();
-      
-      const name = document.getElementById('name')?.value;
-      const email = document.getElementById('email')?.value;
-      const subject = document.getElementById('subject')?.value;
-      const message = document.getElementById('message')?.value;
+      return;
+    }
 
-      // Simple validation
-      if (!name || !email || !message) {
-        alert('Please fill in all required fields.');
-        return;
-      }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address.');
+      e.preventDefault();
+      return;
+    }
 
-      // Email validation
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-      }
-
-      // Simulate form submission
-      const submitButton = contactForm.querySelector('button[type="submit"]');
-      const originalText = submitButton.innerHTML;
-      
-      submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-      submitButton.disabled = true;
-
-      setTimeout(() => {
-        alert(`Thank you ${name}! Your message has been sent. I'll get back to you soon.`);
-        contactForm.reset();
-        submitButton.innerHTML = originalText;
-        submitButton.disabled = false;
-      }, 2000);
-    });
-  }
+    // Let the form submit to Formspree
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+  });
+}
 
   // ================= PARTICLES ANIMATION ================= 
   function createParticles() {
