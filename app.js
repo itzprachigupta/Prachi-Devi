@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
   {
     "title": "GET Intern",
     "company": "Bharti Airtel",
-    "duration": "Feb-June'24",
+    "duration": "February -June'24",
     "location": "Manesar, India",
     "description": "Supported NOC operations and alarm analytics through structured data analysis, reporting, and inter-team collaboration.",
     "achievements": [
@@ -1134,3 +1134,6 @@ function populateProjects() {
 
   console.log('Portfolio initialized successfully!');
 });
+
+
+// Last updated on 27/07/2025
