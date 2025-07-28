@@ -785,7 +785,7 @@ select.form-control {
   --animation-speed: 0.3s;
   --animation-speed-slow: 0.6s;
   --particle-size: 2px;
-  --max-width: 1200px;
+  --max-width: 1100px;
 }
 
 /* Base animations */
@@ -1395,6 +1395,7 @@ select.form-control {
   gap: 11px;
   padding-inline-start: 0;
   overflow: hidden;
+  margin-inline: auto;
 }
 
 .soft-skill {
@@ -1970,6 +1971,7 @@ html, body {
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
+  align-items: center;
 }
 
 /* Responsive Design */
@@ -2159,4 +2161,4 @@ html, body {
 }
 
 
-/* Last updated on 27/07/2025 */
+/* Last updated on 28/07/2025 */
