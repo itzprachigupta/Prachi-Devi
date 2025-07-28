@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const portfolioData = {
     "personalInfo": {
       "name": "Prachi Devi", 
-      "title": "Data Analyst & BI Developer",
+      "title": "Data & Process Analyst",
       "subtitle": "Transforming Data into Strategic Insights",
       "location": "Gurgaon, India",
       "email": "prachi.devi@email.com",
       "linkedin": "https://linkedin.com/in/prachi-devi",
       "github": "https://github.com/prachi-devi",
-      "bio": "I'm Prachi Devi, a Data Analyst and BI Developer with over 1.5 years of experience at Bharti Airtel, driving data-backed decision-making across 21 telecom circles with a strong foundation in Power BI, SQL, DAX, Excel/VBA, and Python. I've analyzed 248K+ OBD calls, optimized SLA resolution time by 60%, improved manual workflows by 40%, and supported decision-makers with real-time visibility and reporting. \n I thrive at the intersection of data, processes, and business impact and I'm passionate about using data storytelling and BI tools to translate complex datasets into clear, impactful outcomes."
+      "bio": "I'm Prachi Devi, a Data & Process Analyst passionate about turning complex data into meaningful insights and actionable outcomes. With 1.5+ years of hands-on experience, I specialize in building interactive dashboards, streamlining processes, and enabling real-time decision-making across cross-functional teams.Skilled in Power BI, SQL, DAX, Excel, and Python, I've worked on large-scale datasets (248K+ records), improved operational efficiency by up to 40%, and optimized turnaround times by 60% through automation and intelligent reporting. At the core, I enjoy working where data meets business—designing solutions that not only look good but drive measurable impact."
     },
   "metrics": [
   {
@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
   },
   {
     label: "Operational Efficiency Improved",
-    value: "40%+",
+    value: "40%",
     description: "Achieved through process automation, field ticket logic redesign, and AI-based solutions like the Remedy Chatbot."
   },
   {
     label: "SLA Turnaround Time Reduced",
-    value: "60%-",
+    value: "60%",
     description: "Reduced escalation delays via logic-driven ownership mapping and real-time visibility of 30+ escalation flows."
   },
   {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
   },
   {
     label: "OBD Follow-up Improvement",
-    value: "15%+",
+    value: "15%",
     description: "Improved resolution adherence by highlighting role-wise call gaps via drillable Power BI views, reducing missed follow-ups."
   },
   {
@@ -73,12 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
   ],
   "soft": [
     "Problem Solving",
+    "Analytical Thinking",
     "Data Storytelling",
     "Process Optimization",
-    "Cross-functional Collaboration",
-    "Stakeholder Communication",
-    "Fast Learning",
-    "Analytical Thinking"
+    "Stakeholder Management",
+    "Quick Adaptability",
+    "Effective Communication"
   ]
 },
     // "projects": [
@@ -259,17 +259,15 @@ document.addEventListener('DOMContentLoaded', function() {
     "location": "Manesar, India",
     "description": "Driving process excellence and business intelligence initiatives across telecom operations by leveraging data analytics, automation, and cross-functional collaboration.",
     "achievements": [
-      "Built an interactive Power BI dashboard analyzing 248K+ OBD calls across 19 telecom circles, leading to a 15% reduction in missed follow-ups and 40% improvement in manual workflows.",
-      "Led process automation initiatives across NOC, Field, and Infra domains, enhancing operational efficiency and reducing manual efforts significantly.",
-      "Designed and implemented UDAAN: a centralized escalation matrix covering 30+ flows across 21 circles, ensuring SLA adherence for 20K+ monthly field tickets.",
-      "Created detailed BRDs and logic documentation for Remedy ticket ownership automation, reducing misassignments by 60% and cutting escalation TAT.",
-      "Built a JIRA-based alarm testing workflow system, streamlining test planning and execution across 10+ monthly test cases with reduced email dependency.",
-      "Currently developing an AI Chatbot for Remedy to assist 2,000+ engineers with ticket diagnostics, resolution guidance, and predictive suggestions.",
-      "Conducted 12+ UAT cycles for JIRA and Remedy enhancements, enabling smooth deployments and early bug identification.",
-      "Built multiple Power BI dashboards for real-time SLA monitoring, ticket escalations, and incident resolutions, reducing delay in decision-making by 25%.",
-      "Delivered 15+ KT sessions and hands-on training workshops for internal teams to accelerate tool adoption and change management.",
-      "Documented 10+ Business Requirement Documents (BRDs) for cross-functional system enhancements and stakeholder alignment."
-    ]
+    "Designed a Power BI dashboard for 248K+ OBD calls across 19 circles, reducing missed follow-ups by 15% and manual efforts by 40%.",
+    "Automated escalation workflows for 21 telecom circles, ensuring SLA adherence for 20K+ monthly tickets.",
+    "Reduced Remedy ticket misassignments by 60% through logic-driven BRD and ownership automation.",
+    "Built a JIRA-based alarm testing system, streamlining 10+ test cycles/month and reducing email dependencies.",
+    "Developing an AI chatbot to assist 2K+ engineers with field diagnostics and resolution guidance.",
+    "Conducted 12+ UAT cycles for system rollouts, ensuring bug-free deployments.",,
+    "Created 10+ BRDs for cross-team tech initiatives and data-driven process upgrades.",
+    "Built real-time dashboards for SLA tracking and escalation monitoring, reducing decision delays by 25%."
+]
   },
   {
     "title": "GET Intern",
@@ -386,13 +384,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // ================= TYPING ANIMATION ================= 
   const typingElement = document.getElementById('typingText');
   const titles = [
-    'Data Analyst & BI Developer',
+    'Data & Process Analyst',
     'Power BI Specialist',
     'Process Optimization Expert',
     'Telecom Analytics Expert',
     'Dashboard Creator',
     'Data Storyteller',
-    'Process Analyst'
   ];
   
   let titleIndex = 0;
@@ -1136,4 +1133,4 @@ function populateProjects() {
 });
 
 
-// Last updated on 27/07/2025
+// Last updated on 28/07/2025
